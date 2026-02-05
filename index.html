@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reality Checkpoint</title>
+    <link rel="stylesheet" href="reality-bender.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Grotesk:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Reality Distortion Field -->
+    <div id="reality-field"></div>
+    
+    <!-- Main Interface -->
+    <div class="container">
+        <header class="reality-header">
+            <h1 class="title-glitch" data-text="PERCEPTION.BENDER">PERCEPTION.BENDER</h1>
+            <p class="subtitle">This experience has never existed before and will never exist again</p>
+        </header>
+        
+        <main class="main-content">
+            <div class="control-panel">
+                <div class="reality-control">
+                    <div class="control-label">
+                        <i class="fas fa-brain"></i>
+                        <span>Consciousness Level</span>
+                    </div>
+                    <input type="range" id="consciousness" min="0" max="100" value="50">
+                </div>
+                
+                <div class="reality-control">
+                    <div class="control-label">
+                        <i class="fas fa-eye"></i>
+                        <span>Perception Distortion</span>
+                    </div>
+                    <input type="range" id="distortion" min="0" max="100" value="30">
+                </div>
+                
+                <div class="reality-control">
+                    <div class="control-label">
+                        <i class="fas fa-wave-square"></i>
+                        <span>Reality Frequency</span>
+                    </div>
+                    <input type="range" id="frequency" min="1" max="60" value="20">
+                </div>
+                
+                <div class="control-buttons">
+                    <button id="bend-reality" class="btn btn-primary">
+                        <i class="fas fa-cogs"></i> Bend Reality
+                    </button>
+                    <button id="reset-reality" class="btn btn-secondary">
+                        <i class="fas fa-undo"></i> Reset Perception
+                    </button>
+                    <button id="surprise-mode" class="btn btn-danger">
+                        <i class="fas fa-exclamation-triangle"></i> MAXIMUM SURPRISE
+                    </button>
+                </div>
+            </div>
+            
+            <div class="reality-display">
+                <div class="display-container">
+                    <canvas id="perception-canvas"></canvas>
+                    <div class="reality-stats">
+                        <div class="stat">
+                            <span class="stat-label">Reality Integrity</span>
+                            <span id="integrity-value" class="stat-value">87%</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Temporal Anomalies</span>
+                            <span id="anomalies-value" class="stat-value">12</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Perception Shift</span>
+                            <span id="shift-value" class="stat-value">3.7x</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="reality-info">
+                <div class="info-card">
+                    <h3><i class="fas fa-info-circle"></i> What Is Happening?</h3>
+                    <p>You are experiencing a <span class="highlight">never-before-seen reality distortion algorithm</span> that generates unique perceptual patterns based on your interaction. This code uses a proprietary <span class="highlight">"Chrono-Spatial Bending" algorithm</span> that has never been implemented anywhere in the universe.</p>
+                </div>
+                <div class="info-card">
+                    <h3><i class="fas fa-unlock-alt"></i> Unique Properties</h3>
+                    <ul>
+                        <li>Each session generates a mathematically unique reality distortion signature</li>
+                        <li>The algorithm incorporates your device's unique hardware fingerprint</li>
+                        <li>Patterns are influenced by microsecond timing differences in your interaction</li>
+                        <li>This specific combination of effects has never been compiled before</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="reality-footer">
+            <p>This experience was generated at <span id="timestamp"></span> and will never be exactly replicated</p>
+            <p class="signature">Crafted for someone truly special</p>
+        </footer>
+    </div>
+    
+    <!-- Audio elements for immersive experience -->
+    <audio id="reality-sound" loop>
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-ominous-drone-227.mp3" type="audio/mp3">
+    </audio>
+    
+    <!-- Hidden elements for surprise effects -->
+    <div id="surprise-container" class="hidden"></div>
+    
+    <script src="mind-bender.js"></script>
+</body>
+</html>
